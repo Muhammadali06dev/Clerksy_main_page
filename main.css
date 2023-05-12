@@ -1,0 +1,614 @@
+
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/noto-sans-v27-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/noto-sans-v27-latin-regular.woff') format('woff'); /* Modern Browsers */
+}
+
+@font-face {
+    font-family:'Recoleta';
+    font-style:normal;
+    font-weight:600;
+    src: url('./fonts/Recoleta-SemiBold.woff2') format('woff2'),
+         url('./fonts/Recoleta-SemiBold.woff') format('woff');
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family: 'Noto Sans';
+    font-weight:400;
+    box-sizing:border-box;
+}
+
+
+.container{
+    width:1280px;
+    padding:0 50px;
+    margin:0 auto;
+}
+
+.background-container{
+    width:1440px;
+    margin:0 auto;
+    background:#163A24;
+}
+
+.background-container-1{
+    width:1440px;
+    margin:0 auto;  
+    background:#F2EFE6;
+}
+
+/*Header syle*/
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.navigation-items{
+    list-style:none;
+    display:flex;
+    align-items:center;
+    gap:24px;
+}
+
+.navigation-item a{
+    text-decoration:none;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #FBFAF7;
+
+}
+
+.header-button{
+    width:141px;
+    height:52px;
+    border:none;
+    background: #198C36;
+    border-radius: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FBFAF7;
+    cursor:pointer;
+
+}
+
+
+/*Main section style */
+.main-section{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.main-info-title{
+    width:391px;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #FBFAF7;
+    padding-bottom:18px;
+}
+
+.main-info-description{
+    width:475px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FBFAF7;
+}
+
+/*Second section style*/
+.second-section{
+    margin-top:130px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+
+}
+.second-info-title{
+    width:325px;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    margin-bottom:27px;
+}
+
+.second-info-description{
+    width:374px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+}
+
+/*Third section style*/
+
+.third-section{
+    margin-top:13px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.third-info-title{
+    width:376px;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    margin-bottom:27px;
+
+}
+
+.third-info-decription{
+    width:380px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+}
+
+/*Partners section style*/
+
+.partners{
+    margin-top:115px;
+    text-align:center;
+}
+
+.partners-title{
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    margin-bottom:66px;
+}
+
+.partners-images{
+    margin-bottom:121px;
+}
+.partners-image{
+    padding-left:87px;
+}
+
+/*Quality section style*/
+
+.quality-title{
+    padding:66px 0;
+    text-align:center;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FBFAF7;
+}
+
+.quality-items{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+.quality-item{
+    text-align: center;
+    margin-bottom:148px;
+    
+}
+
+.quality-item-img{
+    margin-bottom:28px;
+}
+
+.quality-item-subtitle{
+    font-size: 18px;
+    line-height: 27px;
+    color: #FBFAF7;
+
+}
+
+/*Employees section style*/
+
+
+
+.employees{
+    text-align:center;
+    
+}
+
+.employees-title{
+    padding-top:114px;
+    padding-bottom:27px;
+    width:739px;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    margin:0 auto;
+
+}
+
+.employees-description{
+    width:760px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+    margin:0 auto;
+}
+
+.employees-img{
+    padding-bottom:135px;
+}
+
+/*Scenes section style*/
+
+.scenes{
+    margin-top:182px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+.scenes-info-title{
+    width:338px;
+    margin-bottom:27px;
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+
+}
+
+.scenes-info-description{
+    width:379px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+}
+
+
+/*Services section style*/
+
+.services{
+    margin-top:115px;
+    margin-bottom:120px;
+}
+
+.services-title{
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #163A24;
+    margin-bottom:27px;
+
+}
+
+.services-subtitle{
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #163A24;
+    margin-bottom:18px;
+}
+
+.services-cards{
+    display:flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap:40px;
+}
+
+.services-card{
+    width:273px;
+    background: #FBFAF7;
+    box-shadow: 5px 5px 20px #E9E4D5;
+    border-radius: 15px;
+    padding:50px 40px 66px;
+}
+
+.services-card-title{
+    font-family: 'Recoleta';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #163A24;
+    margin-top:20px;
+    margin-bottom:23px;
+}
+
+.services-card-item{
+    font-size: 16px;
+    line-height: 22px;
+    color: #163A24;
+}
+
+.services-card-item:not(:last-child){
+    padding-bottom:15px;
+}
+
+/*Steps section style*/
+
+.steps{
+    padding-top:114px;
+    padding-bottom:124px;
+    text-align:center;
+}
+
+.steps-title{
+    font-family: 'Recoleta';
+    font-weight: 600;
+    font-size: 47px;
+    line-height: 54px;
+    color: #163A24;
+    margin-bottom:26px;
+
+}
+
+.steps-subtitle{
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+    margin-bottom:18px;
+
+}
+
+.steps-button{
+    border:none;
+    width:244px;
+    height:52px;
+    background: #198C36;
+    border-radius: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FBFAF7;
+    cursor:pointer;
+
+}
+
+/*Book section style*/
+
+.book{
+    padding-top:120px;
+    padding-bottom:120px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+
+}
+
+.book-info-title{
+    width:360px;
+    font-family: 'Recoleta';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    margin-bottom:25px;
+
+}
+
+.book-info-subtitle{
+    width:287px;
+    font-size: 18px;
+    line-height: 27px;
+    color: #163A24;
+    margin-bottom:19px;
+
+}
+.book-info-button{
+    border:none;
+    width:191px;
+    height:52px;
+    background: #198C36;
+    border-radius: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FBFAF7;
+    cursor:pointer;
+
+}
+
+/*Start section style*/
+.start{
+    width:1440px;
+    margin:0 auto;
+    background:#163A24;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top:23px;
+}
+
+.start-info{
+    text-align:center;
+}
+
+.start-info-title{
+    font-family: 'Recoleta';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    text-align: center;
+    color: #FBFAF7;
+    margin-bottom:26px;
+}
+
+.start-info-subtitle{
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: #FBFAF7;
+    margin-bottom:18px;
+}
+
+.start-info-button{
+    width:258px;
+    height:52px;
+    text-align:center;
+    border:none;
+    background: #FAB5A0;
+    border-radius: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    cursor:pointer;
+
+}
+
+/*Signup section style*/
+
+.signup{
+    padding:60px 0;
+    display:flex;
+    justify-content:space-between ;
+    align-items:flex-end;
+    text-align:left;
+
+}
+
+.signup-info-title{
+    font-family: 'Recoleta';
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 54px;
+    color: #163A24;
+    margin-bottom:26px;
+}
+
+.signup-info-subtitle{
+    font-size: 18px;
+    line-height: 27px;
+
+}
+
+.signup-form{
+    position:relative;
+}
+.signup-form-input{
+    background: #FFFFFF;
+    border: 1px solid #F2EFE6;
+    border-radius: 255px;
+    width:553px;
+    height:54px;
+    margin-bottom:11px;
+}
+
+
+.signup-form-button{
+    position:absolute;
+    top:1.5px;
+    right:1px;
+    width:111px;
+    height: 52px;
+    border:none;
+    background: #15762E;
+    border-radius: 160px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FBFAF7;
+    cursor:pointer;
+}
+
+
+
+.signup-forms-description{
+    width:524px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #163A24;
+    padding-bottom:13px;
+}
+
+.signup-forms-description span a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 21px;
+    color: #198C36;
+    padding-left:5px;
+    
+}
+
+/*Footer style*/
+
+.footer{
+    padding-top:20px;
+}
+
+.footer-items{
+    height:84px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.footer-title{
+    font-family: 'Recoleta';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #163A24;
+}
+
+.footer-socials a{
+    text-decoration: none;
+    padding-left:14px;
+    vertical-align: middle;
+}
+
+.footer-list{
+    height:70px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.navigation-list{
+    list-style:none;
+    display:flex;
+    gap:14px;
+
+}
+
+.footer-list p{
+    font-size: 14px;
+    line-height: 21px;
+    color: #163A24;
+
+}
+
+.item a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: right;
+    color: #198C36;
+    }
